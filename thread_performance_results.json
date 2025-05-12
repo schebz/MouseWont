@@ -1,0 +1,70 @@
+{
+  "hardware": {
+    "threadCount": 28,
+    "date": "2025-05-12T10:25:41.146Z"
+  },
+  "testParameters": {
+    "batchSize": 1000,
+    "numPoints": 100,
+    "iterations": 10
+  },
+  "results": {
+    "bezier": {
+      "sequential": {
+        "name": "Individual Bezier Paths (Sequential)",
+        "avgTime": 106.10405310000002,
+        "minTime": 104.08336,
+        "maxTime": 104.08336,
+        "totalTime": 1061,
+        "iterations": 10
+      },
+      "batch": {
+        "name": "Batch Bezier Paths (Parallel)",
+        "avgTime": 105.52705309999999,
+        "minTime": 103.331132,
+        "maxTime": 103.331132,
+        "totalTime": 1055,
+        "iterations": 10
+      },
+      "speedup": 1.0054677922205717
+    },
+    "physics": {
+      "sequential": {
+        "name": "Individual Physics Sims (Sequential)",
+        "avgTime": 112.71372330000001,
+        "minTime": 110.762533,
+        "maxTime": 110.762533,
+        "totalTime": 1127,
+        "iterations": 10
+      },
+      "batch": {
+        "name": "Batch Physics Sims (Parallel)",
+        "avgTime": 110.7225005,
+        "minTime": 105.071285,
+        "maxTime": 105.071285,
+        "totalTime": 1108,
+        "iterations": 10
+      },
+      "speedup": 1.0179839038226925
+    },
+    "ou": {
+      "sequential": {
+        "name": "Individual OU Processes (Sequential)",
+        "avgTime": 42.3910422,
+        "minTime": 40.805556,
+        "maxTime": 40.805556,
+        "totalTime": 424,
+        "iterations": 10
+      },
+      "batch": {
+        "name": "Batch OU Processes (Parallel)",
+        "avgTime": 38.4489813,
+        "minTime": 36.57672,
+        "maxTime": 36.57672,
+        "totalTime": 384,
+        "iterations": 10
+      },
+      "speedup": 1.1025270570692598
+    }
+  }
+}

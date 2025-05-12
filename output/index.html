@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Movement Path Visualizations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .static-images, .animations {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .description {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+            border-radius: 4px;
+        }
+        .model-key {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .model {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .color-box {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .blue { background-color: blue; }
+        .cyan { background-color: cyan; }
+        .green { background-color: green; }
+        .lime { background-color: lime; }
+        .red { background-color: red; }
+    </style>
+</head>
+<body>
+    <h1>Mouse Movement Path Visualizations</h1>
+    
+    <div class="section">
+        <h2>About These Visualizations</h2>
+        <p>
+            These visualizations show different mouse movement models used to generate 
+            natural-looking cursor movements between points. Each model has distinct 
+            characteristics that make it suitable for different types of movements.
+        </p>
+        
+        <div class="model-key">
+            <div class="model">
+                <span class="color-box blue"></span>
+                <span>Bezier - Standard curved path</span>
+            </div>
+            <div class="model">
+                <span class="color-box cyan"></span>
+                <span>BezierHigh - More complex curve with jitter</span>
+            </div>
+            <div class="model">
+                <span class="color-box green"></span>
+                <span>Physics - Spring-mass-damper simulation</span>
+            </div>
+            <div class="model">
+                <span class="color-box lime"></span>
+                <span>PhysicsLowDamping - Oscillatory physics movement</span>
+            </div>
+            <div class="model">
+                <span class="color-box red"></span>
+                <span>MinimumJerk - Biomechanically accurate</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Static Path Visualizations</h2>
+        <div class="static-images">
+            <div class="image-container">
+                <h3>Path Sample 1</h3>
+                <img src="path_pair_1.png" alt="Path Sample 1">
+            </div>
+            
+            <div class="image-container">
+                <h3>Path Sample 2</h3>
+                <img src="path_pair_2.png" alt="Path Sample 2">
+            </div>
+            
+            <div class="image-container">
+                <h3>Path Sample 3</h3>
+                <img src="path_pair_3.png" alt="Path Sample 3">
+            </div>
+            
+            <div class="image-container">
+                <h3>Path Sample 4</h3>
+                <img src="path_pair_4.png" alt="Path Sample 4">
+            </div>
+            
+            <div class="image-container">
+                <h3>Path Sample 5</h3>
+                <img src="path_pair_5.png" alt="Path Sample 5">
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Animated Path Visualizations</h2>
+        <div class="animations">
+            <div class="image-container">
+                <h3>Animation 1</h3>
+                <img src="path_animation_1.gif" alt="Path Animation 1">
+            </div>
+            
+            <div class="image-container">
+                <h3>Animation 2</h3>
+                <img src="path_animation_2.gif" alt="Path Animation 2">
+            </div>
+            
+            <div class="image-container">
+                <h3>Animation 3</h3>
+                <img src="path_animation_3.gif" alt="Path Animation 3">
+            </div>
+            
+            <div class="image-container">
+                <h3>Animation 4</h3>
+                <img src="path_animation_4.gif" alt="Path Animation 4">
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Implementation Details</h2>
+        <div class="description">
+            <p>
+                <strong>Bézier Curves:</strong> Uses cubic Bézier curves with control points calculated based on the distance between start and end points. 
+                The control points are placed asymmetrically to create natural-looking curved trajectories.
+            </p>
+            <p>
+                <strong>Physics Simulation:</strong> Models the cursor as a mass connected to the target by a spring with damping. 
+                This creates realistic acceleration, deceleration, and potentially overshoot behavior.
+            </p>
+            <p>
+                <strong>Minimum Jerk Trajectory:</strong> Based on research showing that human movements minimize the rate of change of acceleration (jerk). 
+                This produces very smooth paths that closely mimic natural human movements, especially for direct targeting tasks.
+            </p>
+            <p>
+                <strong>Jitter:</strong> The Ornstein-Uhlenbeck process is used to add realistic tremor/jitter, simulating the slight imprecision in human movements. 
+                This stochastic process creates correlated noise that appears more natural than random perturbations.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
