@@ -4,9 +4,9 @@ Version: 0.1.0
 Author: Mika Tokamak
 Last Modified: 2025-11-05
 
-MousePlayWrong is a multi-language framework for generating and executing realistic human-like mouse movements.
+MouseWont is a multi-language framework for generating and executing realistic human-like mouse movements.
 It was inspired by a friend who discussed the complications of creating human-like movements in testing applications or even security applications 
-@Pilsy thanks for the challenge the mathematics is sound, I was surprised by the TS outperforming compiled cpp
+@Pilsy, thanks for the challenge. The mathematics is sound, I was surprised by the .ts outperforming compiled C++
 
 I can extend this much more but should give you a good idea of combinations needed to create random huma like movement ...
 
