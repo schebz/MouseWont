@@ -6,9 +6,9 @@ Last Modified: 2025-11-05
 
 MouseWont is a multi-language framework for generating and executing realistic human-like mouse movements.
 It was inspired by a friend who discussed the complications of creating human-like movements in testing applications or even security applications 
-@Pilsy, thanks for the challenge. The mathematics is sound, I was surprised by the .ts outperforming compiled C++
+@Pilsy, thanks for the challenge. The mathematics is sound, I was surprised by the .ts outperforming compiled C++.
 
-I can extend this much more but should give you a good idea of combinations needed to create random huma like movement ...
+I can extend this much more, but it should give you a good idea of the combinations needed to create random human-like movement.
 
 ## Quick Start
 
@@ -86,13 +86,13 @@ demo().catch(console.error);
 - Multi-language support (TypeScript, Python, C++, Fortran)
 - Hardware integration capabilities
 - Realistic human-like movements with configurable parameters
-- Highly optimized for performance
+- Highly optimised for performance
 
 ## Movement Strategies
 
 - **Bezier**: Smooth curved paths using Bezier curves
 - **Physics**: Realistic movements based on physical simulation
-- **Minimum Jerk**: Precise movements with optimized jerk profile
+- **Minimum Jerk**: Precise movements with optimised jerk profile
 - **Composite**: Combines multiple strategies for complex movements
 - **Adaptive**: Automatically selects the best strategy based on parameters
 
@@ -108,12 +108,12 @@ demo().catch(console.error);
 Check out the examples directory for more detailed usage scenarios:
 - Basic usage
 - Parallel path generation
-- Thread pool utilization
+- Thread pool utilisation
 - Symbolic math extraction
 
-## Performance Optimization
+## Performance Optimisation
 
-The system includes various performance optimizations:
+The system includes various performance optimisations:
 - Pooled memory allocators
 - Fortran for physics calculations
 - SIMD instructions for vector operations
@@ -162,10 +162,10 @@ The project includes several different movement algorithms with varying performa
 
 ### Surprising Findings
 
-Contrary-to-expectations, TypeScript outperforms C++ in most algorithms except the Ornstein-Uhlenbeck process. This is likely due to:
+Contrary to expectations, TypeScript outperforms C++ in most algorithms except the Ornstein-Uhlenbeck process. This is likely due to:
 
-- Overhead of crossing the JavaScript/C++ boundary through Node.js addons
-- V8's Just-In-Time compilation optimizing the TypeScript code very effectively
+- Overhead of crossing the JavaScript /C++ boundary through Node.js addons
+- V8's Just-In-Time compilation optimises the TypeScript code very effectively
 - Data copying between JavaScript and C++ creates additional overhead
 
 The Ornstein-Uhlenbeck process is the only algorithm where C++ implementation outperforms TypeScript (1.68x faster), suggesting stochastic processes benefit most from C++ optimisation.
@@ -184,7 +184,7 @@ The Ornstein-Uhlenbeck process is the only algorithm where C++ implementation ou
 
 ## Visual Examples
 
-The output directory contains animated visualizations of the different movement styles:
+The output directory contains animated visualisations of the different movement styles:
 
 ![Path Animation 1](output/path_animation_1.gif)
 *Example of different movement strategies between the same start and end points*
@@ -196,4 +196,4 @@ You can view more detailed performance comparisons in the HTML report at `output
 
 ## License
 
-This project is for demonstration purposes only. The mathematical formulas have been derived into new alternate enhanced algorithms for this objective.
+This project is for demonstration purposes only. The mathematical formulas have been derived into new, alternate, enhanced algorithms for this objective.
