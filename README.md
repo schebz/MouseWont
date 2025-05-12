@@ -1,4 +1,4 @@
-# MousePlayWrong: Human-like Mouse Movement Simulation
+# MouseWont: Human-like Mouse Movement Simulation
 
 Version: 0.1.0
 Author: Mika Tokamak
