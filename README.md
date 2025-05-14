@@ -16,8 +16,8 @@ I can extend this much more, but it should give you a good idea of the combinati
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/mousePlayWrong.git
-cd mousePlayWrong
+git clone https://github.com/schebz/MouseWont
+cd MouseWont
 
 # Install dependencies
 npm install
