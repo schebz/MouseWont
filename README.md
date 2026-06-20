@@ -1,7 +1,7 @@
 # MouseWont: Human-like Mouse Movement Simulation
 
 Version: 0.1.0
-Author: Mika Tokamak
+Author: Toka & Schebz
 Last Modified: 2025-11-05
 
 MouseWont is a multi-language framework for generating and executing realistic human-like mouse movements.
